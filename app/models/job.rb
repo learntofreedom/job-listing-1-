@@ -1,6 +1,5 @@
 class Job < ApplicationRecord
   scope :recent, -> { order('created_at DESC') }
-
   scope :published, -> { where(is_hidden: false) }
 
   def publish!
@@ -12,4 +11,5 @@ class Job < ApplicationRecord
      self.is_hidden = true
      self.save
    end
+   
  end

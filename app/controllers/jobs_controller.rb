@@ -7,7 +7,8 @@ class JobsController < ApplicationController
         flash[:warning] = "This Job already archieved"
         redirect_to root_path
       end
-    end
+  end
+
     def index
       @jobs = case params[:order]
               when 'by_lower_bound'
