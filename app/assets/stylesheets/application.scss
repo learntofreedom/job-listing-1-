@@ -17,7 +17,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
- 
+
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
  /****** LOGIN MODAL ******/
@@ -118,8 +118,8 @@
  //---------Navbar---------
 
  .navbar-default {
-     background-color: #212121;  //背景颜色
-     border-color: #212121;  //边框色
+     background-color: #212121;  //页面头部背景颜色（登录栏）
+     border-color: #212121;  //页面头部边框色
      margin-bottom: 0;  //底部 margin 不撑开距离
      border-radius: 0;
  }
@@ -219,10 +219,10 @@
     border-top-left-radius: 3px;//左上角圆边
 }
 
- .jumbotron h1, .jumbotron .h1 {
+ .jumbotron h1 {
      text-align: left;//文字左对齐
      color: #222;  //字体颜色
-
+     margin-top: 30px;
      padding: 50px 20px 0;//上50px，左右20px，下0
  }
 
